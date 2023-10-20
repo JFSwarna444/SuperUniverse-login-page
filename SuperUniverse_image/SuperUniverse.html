@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SuperUniverse_image/Doctor Strange.ico" type="SuperUniverse_image/x-icon">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Super_Universe</title>
+</head>
+<body>
+    <!-- <h2>Welcome to our Gaming Page</h2> -->
+    <div class="login-box">
+        <h3>Welcome to our Gaming Page</h3>
+        <h1>Login</h1>
+        <div class="textbox">
+            <input type="text" placeholder="username" id="username">
+        </div>
+        <div class="textbox">
+            <input type="email" placeholder="email" id="email">
+        </div>
+        <div class="textbox">
+            <input type="password" placeholder="password" id="password">
+        </div>
+
+        <input type="button" class="btn" value="go" onclick="validate()">
+        <p><a href="#" class="button">forgot password</a></p>
+        <span><p><a href="#" class="button">create new account</a></p></span>
+
+    </div>
+
+    <script>
+        function validate(){
+            var username=document.getElementById("username").value
+        var email=document.getElementById("email").value
+        var password=document.getElementById("password").value
+        if(username=="Swarna" && email=="abc@gmail.com" && password=="123"){
+            alert("login successful");
+            return false;
+        }
+        else{
+            alert("login fail");
+        }
+        }
+        
+    </script>
+</body>
+</html>
